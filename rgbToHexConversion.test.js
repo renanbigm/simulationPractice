@@ -15,16 +15,28 @@ function runTests() {
   });
 }
 
-tests.push(['shortestTime: for 255, 255, 255 should return "FFFFFF"', () => {
-  const result = rgbToHexConversion(255, 255, 255);
+tests.push(['rgbToHexConversion: for 255, 255, 255 should return "FFFFFF"', () => {
+    const result = rgbToHexConversion(255, 255, 255);
 
-  assert.equal(result, "FFFFFF");
+    assert.equal(result, "FFFFFF");
 }]);
 
-tests.push(['shortestTime: for 0, 0, 0  should return "000000"', () => {
-  const result = rgbToHexConversion(0, 0, 0 );
+tests.push(['rgbToHexConversion: for 0, 0, 0  should return "000000"', () => {
+    const result = rgbToHexConversion(0, 0, 0);
 
-  assert.equal(result, "000000");
+    assert.equal(result, "000000");
+}]);
+
+tests.push(['rgbToHexConversion: for 255, 255, 300  should return "FFFFFF"', () => {
+    const result = rgbToHexConversion(255, 255, 300);
+  
+    assert.equal(result, "FFFFFF");
+}]);
+
+tests.push(['rgbToHexConversion: for 148, 0, 211  should return "9400D3"', () => {
+    const result = rgbToHexConversion(148, 0, 211);
+
+    assert.equal(result, "9400D3");
 }]);
 
 runTests();
