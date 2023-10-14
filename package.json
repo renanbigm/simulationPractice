@@ -1,0 +1,22 @@
+{
+  "name": "simulationpractice",
+  "version": "1.0.0",
+  "description": "The rgb function is incomplete. Complete it so that passing in RGB decimal values will result in a hexadecimal representation being returned. Valid decimal values for RGB are 0 - 255. Any values that fall out of that range must be rounded to the closest valid value.",
+  "scripts": {
+    "test:watch": "nodemon ./rgbToHexConversion.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renanbigm/simulationPractice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/renanbigm/simulationPractice/issues"
+  },
+  "homepage": "https://github.com/renanbigm/simulationPractice#readme"
+}
